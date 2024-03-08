@@ -21,36 +21,44 @@ section {
 }
 
 .content {
-    width: 85%;
+    width: 100%;
     margin: auto;
 }
 
 nav {
     height: 80px;
     background-color: var(--primary-color); /* Updated */
-    width: 100%; /* Updated */
-    padding: 0; /* Updated */
-    margin: 0; /* Updated */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
 }
 
 nav h1 {
-    float: left;
+
     line-height: 80px;
     font-size: 35px;
     color: #fff;
-    margin-left: 20px; /* Adjusted */
+    font-weight: bolder;
+
 }
 
 nav ul {
-    float: right;
+    display: flex;
+    margin-right: 20px;
+    /*float: right;
     line-height: 80px;
-    margin: 0;
+    margin: 0; */
+
 }
 
 nav ul li {
-    display: inline-block;
     list-style: none;
-    padding: 0 15px; /* Adjusted */
+    margin-left: 15px;
+  /*  display: inline-block;
+    list-style: none;
+    padding: 0 15px;  */
 }
 
 nav ul li a {
@@ -231,6 +239,9 @@ ul {
 /* Responsiveness */
 @media(max-width: 767px) {
     .footer-col {
+        width: 100%;
+    }
+    .body-section {
         width: 100%;
     }
 }
