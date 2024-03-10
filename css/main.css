@@ -108,6 +108,7 @@ nav ul li .act {
     text-transform: none;
     background-color: var(--primary-color); /* Updated */
     line-height: 1.5;
+    text-decoration: none;
 }
 
 .article .btn:hover {
